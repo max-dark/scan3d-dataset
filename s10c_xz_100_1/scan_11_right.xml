@@ -1,0 +1,32 @@
+<icon_data_format valuetype="" name="" >
+ <parameter name="size" >9236</parameter>
+ <parameter name="version" >1</parameter>
+ <parameter name="layout" >SUBCOMPONENT</parameter>
+ <component valuetype="" name="HorMax 1" >
+  <parameter name="size" >9236</parameter>
+  <parameter name="height" >1</parameter>
+  <worldrangetraits>
+   <parameter name="lower bound x" >0</parameter>
+   <parameter name="lower bound r" >0</parameter>
+   <parameter name="upper bound x" >1798.99</parameter>
+   <parameter name="upper bound r" >1763.69</parameter>
+   <parameter name="coordinate unit" ></parameter>
+  </worldrangetraits>
+  <subcomponent valuetype="FLOAT" name="Range X" >
+   <parameter name="size" >4096</parameter>
+   <parameter name="width" >1024</parameter>
+  </subcomponent>
+  <subcomponent valuetype="FLOAT" name="Range R" >
+   <parameter name="size" >4096</parameter>
+   <parameter name="width" >1024</parameter>
+  </subcomponent>
+  <subcomponent valuetype="INT" name="Mark" >
+   <parameter name="size" >20</parameter>
+   <parameter name="width" >5</parameter>
+  </subcomponent>
+  <subcomponent valuetype="BYTE" name="Intensity" >
+   <parameter name="size" >1024</parameter>
+   <parameter name="width" >1024</parameter>
+  </subcomponent>
+ </component>
+</icon_data_format>
