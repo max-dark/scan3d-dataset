@@ -5,7 +5,7 @@ This repository containts wood scan dataset.
 Sick Ruler E12xx
 
 ## cameras config
-* start fo capturing by `ENABLE` signal
+* start of capturing by `ENABLE` signal
 * sync by rotary encoder
 
 ## directory name format
