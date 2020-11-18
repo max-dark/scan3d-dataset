@@ -293,29 +293,31 @@ uint32_t Mark::scanId() const
 
 python3 + numpy
 ```python
-# количество сканов в одном файле
+# num of scan lines per file
 NUM_SCANS = 512
-# количество точек в одном скане
+# num of points per line
 DOTS_PER_SCAN = 1024
-# всего точек в файле
+# total points per file
 TOTAL_DOTS = NUM_SCANS * DOTS_PER_SCAN
 
 SCAN_SHAPE = (NUM_SCANS, DOTS_PER_SCAN)
 MASK_SHAPE = (NUM_SCANS, 5)
 
-# координаты точки [X, R] относительно камеры(чем меньше R тем дальше от камеры)
-# в этой системе камера расположена в (Xcam, Ycam) = (1000.0, 2054.0)
+### define types
+
+# point coords [X, R] относительно камеры(чем меньше R тем дальше от камеры)
+# Camera position in coord system (Xcam, Ycam) = (1000.0, 2054.0)
 coord_t  = np.dtype((np.float32, SCAN_SHAPE))
-# статус
+# line status
 mask_t   = np.dtype((np.int32, MASK_SHAPE))
-# якрость в точке
+# intensity
 intens_t = np.dtype((np.uint8, SCAN_SHAPE))
 
 # struct data_t
 # {
 #   float32 X[NUM_SCANS][DOTS_PER_SCAN];
 #   float32 Y[NUM_SCANS][DOTS_PER_SCAN];
-#   int32_t mask[NUM_SCANS][5]; // статус скана, позиция энкодера и состояние датчиков
+#   int32_t mask[NUM_SCANS][5]; // line scan status, encoder position and sensors state
 #   uint8_t intens[NUM_SCANS][DOTS_PER_SCAN];
 # };
 data_t = np.dtype([
