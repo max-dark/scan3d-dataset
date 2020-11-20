@@ -39,7 +39,7 @@ struct Buffer
 };
 ```
 ## how to load file
-c++17
+c++17 [viewer source](https://gist.github.com/max-dark/0e0e22b92a8c1b4db939d2bb3fad4483)
 ```cpp
 // buffer.hxx
 #ifndef POINT3D__BUFFER_HXX
